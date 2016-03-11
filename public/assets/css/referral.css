@@ -3,7 +3,6 @@ html {
 }
 
 body {
-  background-color: #e27e25;
   background-repeat: none;
   background-size: cover;
   height: 100%;
@@ -12,5 +11,5 @@ body {
 
 .container {
   padding-top: 200px;
-  color: white;
+  
 }
