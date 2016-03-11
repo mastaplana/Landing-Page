@@ -25,20 +25,20 @@ html {
 }
 
 .btn.outline {
-    background: none;
+    background: white;
     padding: 12px 22px;
 }
 
 .btn-default.outline {
     border: 2px solid black;
-    background: none;
+    background: white;
     color: black;
 }
 
 .btn-default.outline:hover, .btn-default.outline:focus, .btn-default.outline:active, .btn-default.outline.active, .open > .dropdown-toggle.btn-default {
     color: black;
     border-color : black;
-    background: #F8F8F8;
+    background: white;
 }
 .btn-default.outline:active, .btn-default.outline.active {
     border-color: black;
