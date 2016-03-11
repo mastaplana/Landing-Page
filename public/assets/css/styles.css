@@ -47,7 +47,7 @@ html {
 
 
 #stepsContainer {
-  height: 1000px;
+  height: 785px;
   width: 100%;
   background-repeat: no-repeat;
   background-color: white;
@@ -55,7 +55,7 @@ html {
 }
 
 #stepsTitle {
-  padding-top: 60px;
+  padding-top: 90px;
 }
 #steps {
   padding-top: 40px;
