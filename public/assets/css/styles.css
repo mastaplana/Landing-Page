@@ -2,75 +2,380 @@ html {
   height: 100%;
 }
 
-#mainContainer {
-  height: 800px;
+#bufferDiv {
+  height: 130px;
   width: 100%;
-  background-image: url(/assets/images/bgimg3.png);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
-#impronto {
-  font-size: 6.0em;
-  color: black;
+@media (max-width: 414px) {
+
+  .muli-font {
+    font-family: 'Muli', sans-serif;
+  }
+  .ubuntu-font {
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  /********************************
+            NAVBAR CONTAINER
+  *********************************/
+
+  #navContainer {
+
+  }
+
+  /********************************
+            MAIN CONTAINER
+  *********************************/
+
+  #mainContainer {
+    width: 100%;
+  }
+
+  #siteTitle {
+    font-size: 6.0em;
+  }
+
+  #sitePhrase {
+    font-size: 3.0em;
+  }
+
+  .navItem {
+    font-size: 1.6em;
+  }
+
+  #bulletList {
+    padding-top: 20px;
+  }
+
+  .listItem {
+    font-size: 1.8em;
+  }
+
+  #inputTitle {
+    padding-top: 60px;
+  }
+
+  #inputTitleText {
+    font-size: 2.0em;
+  }
+
+  #accessButtonDiv {
+    padding-top: 10px;
+    display: block;
+    float: left;
+  }
+
+  .butt{
+    padding: .75rem;
+    margin: .375rem;
+
+    background-color: white;
+    border-radius: 4px;
+  }
+
+  .butt:focus{
+    outline: none;
+  }
+
+  .butt {
+    border: 2px solid #ff7469;
+    line-height: 1.375;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+
+    font-weight: 700;
+
+    color: #ff7469;
+
+    cursor: pointer;
+    -webkit-animation: hue 60s infinite linear;
+  }
+
+  .butt:hover {
+    background-color: #ff7469;
+    color: white;
+  }
+
+  .wrap {
+    max-width: 38rem;
+    margin: 0 auto;
+  }
+
+  .island {
+    padding: 1.5rem;
+  }
+
+
+  /********************************
+            EVENTS CONTAINER
+  *********************************/
+
+  #eventsContainer {
+    width: 100%;
+    height: 1600px;
+    padding-top: 100px;
+  }
+
+  #eventsTitle {
+    padding-top: 30px;
+  }
+
+  #eventsKeys {
+    padding-top: 35px;
+  }
+
+  #eventsKeysText {
+    font-size: 1.6em;
+  }
+
+  #eventsPictureFirstRow {
+    padding-top: 20px;
+  }
+
+  #eventsPictureSecondRow {
+    padding-top: 0px;
+  }
+
+  #eventsTitle {
+    padding-top: 30px;
+  }
+
+  #eventsKeys {
+    padding-top: 35px;
+  }
+
+  #eventsKeysText {
+    font-size: 1.6em;
+  }
+
+  #eventsPictureFirstRow {
+    padding-top: 20px;
+  }
+
+  img {
+    height: 200px;
+    width: 200px;
+  }
+
+  .eventPicture {
+    padding-top: 10px;
+  }
+
+  /********************************
+            GIG INFO CONTAINER
+  *********************************/
+
+  #gigInfoContainer {
+    width: 100%;
+    height: 800px;
+    padding-top: 30px;
+  }
+
+  #gigInfoTitle {
+    padding-top: 50px;
+    font-size: 3.6em;
+  }
+
+  .gigTitle {
+    font-size: 1.8em;
+    padding-top: 15px;
+  }
+
+  .gigParagraph {
+    font-size: 1.2em;
+  }
+
+  #eventHereButton {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  #eventHereButton a:hover {
+    color: #ff7469;
+  }
 }
 
-#tagline {
-  color: black;
-  font-size: 2.6em;
-}
+@media (min-width: 1280px) {
 
-#taglineSecondary {
-  color: black;
-}
+  .muli-font {
+    font-family: 'Muli', sans-serif;
+  }
+  .ubuntu-font {
+    font-family: 'Ubuntu', sans-serif;
+  }
 
-.btn.outline {
-    background: white;
-    padding: 12px 22px;
-}
+    /********************************
+              NAVBAR CONTAINER
+    *********************************/
 
-.btn-default.outline {
-    border: 2px solid black;
-    background: white;
-    color: black;
-}
+    #navContainer {
 
-.btn-default.outline:hover, .btn-default.outline:focus, .btn-default.outline:active, .btn-default.outline.active, .open > .dropdown-toggle.btn-default {
-    color: black;
-    border-color : black;
-    background: white;
-}
-.btn-default.outline:active, .btn-default.outline.active {
-    border-color: black;
-    color: black;
-}
+    }
+
+    /********************************
+              MAIN CONTAINER
+    *********************************/
+
+    #mainContainer {
+      width: 100%;
+    }
+
+    #siteTitle {
+      font-size: 6.0em;
+    }
+
+    #sitePhrase {
+      font-size: 3.0em;
+    }
+
+    .navItem {
+      font-size: 1.6em;
+    }
+
+    #bulletList {
+      padding-top: 20px;
+    }
+
+    .listItem {
+      font-size: 1.8em;
+    }
+
+    #inputTitle {
+      padding-top: 60px;
+    }
+
+    #inputTitleText {
+      font-size: 2.0em;
+    }
+
+    #accessButtonDiv {
+      padding-top: 10px;
+      display: block;
+      float: left;
+    }
+
+  .butt{
+    padding: .75rem;
+    margin: .375rem;
+
+    background-color: white;
+    border-radius: 4px;
+  }
+
+  .butt:focus{
+    outline: none;
+  }
+
+  .butt {
+    border: 2px solid #ff7469;
+    line-height: 1.375;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+
+    font-weight: 700;
+
+    color: #ff7469;
+
+    cursor: pointer;
+    -webkit-animation: hue 60s infinite linear;
+  }
+
+  .butt:hover {
+    background-color: #ff7469;
+    color: white;
+  }
+
+  .wrap {
+    max-width: 38rem;
+    margin: 0 auto;
+  }
+
+  .island {
+    padding: 1.5rem;
+  }
 
 
-#stepsContainer {
-  height: 785px;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-color: white;
-  background-size: cover;
-}
+    /********************************
+              EVENTS CONTAINER
+    *********************************/
 
-#stepsTitle {
-  padding-top: 90px;
-}
-#steps {
-  padding-top: 40px;
-}
+    #eventsContainer {
+      height: 800px;
+      width: 100%;
+      padding-top: 125px;
+    }
 
-.step_animation {
-  -webkit-animation-duration: 2s;
-  -webkit-animation-delay: 0.5s;
-  /*-webkit-animation-iteration-count: infinite; */
-}
+    #eventsTitle {
+      padding-top: 30px;
+    }
 
-.step_title {
-  font-size: 2.8em
-}
+    #eventsKeys {
+      padding-top: 35px;
+    }
 
-#earlyAccessDiv {
-  padding-top: 100px;
+    #eventsKeysText {
+      font-size: 1.6em;
+    }
+
+    #eventsPictureFirstRow {
+      padding-top: 20px;
+    }
+
+    #eventsTitle {
+      padding-top: 30px;
+    }
+
+    #eventsKeys {
+      padding-top: 35px;
+    }
+
+    #eventsKeysText {
+      font-size: 1.6em;
+    }
+
+    #eventsPictureFirstRow {
+      padding-top: 20px;
+    }
+
+    #eventsPictureSecondRow {
+      padding-top: 20px;
+    }
+
+    img{
+      height: 280px;
+      width: 280px;
+    }
+
+    /********************************
+              GIG INFO CONTAINER
+    *********************************/
+
+    #gigInfoContainer {
+      height: 800px;
+      padding-top: 70px;
+    }
+
+    #gigInfoTitle {
+      padding-top: 50px;
+      font-size: 3.6em;
+    }
+
+    .gigTitle {
+      font-size: 1.8em;
+      padding-top: 15px;
+    }
+
+    .gigParagraph {
+      font-size: 1.2em;
+    }
+
+    #eventHereButton {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    #eventHereButton:hover {
+      color: #ff7469;
+    }
 }

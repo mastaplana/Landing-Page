@@ -1,33 +1,76 @@
-//documentReady function
-$(function() {
-
-  // variable for detection on an animation ending
+//ANIMATIONS CODE
+/**$(function() {
   var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-  // fadeIn animation variable
   var fadeIn = 'animated fadeIn';
-  // bounceInLeft animation variable
   var bounceInLeft = 'animated bounceInLeft';
 
-  // bounces in mainContainer on load time
   $('#mainContainer').addClass(bounceInLeft).one(animationEnd, function() {
     $(this).removeClass(bounceInLeft);
   });
 
+  $("[data-toggle = 'popover']").popover();
+});
+*/
 
-  // when user's click 'Find Out More' the page will scroll smoothly
-  // to the 'stepsContainer'
-  $('#moreInfoButton').click(function() {
-    $('html, body').animate({
-        scrollTop: $("#stepsContainer").offset().top
-      }, 700);
+$(function() {
+  $("[data-toggle = 'popover']").popover();
+});
+
+/* Smooth scroll effect when users click 'listgig' */
+$('#listGigLink').click(function() {
+  $('html, body').animate({
+      scrollTop: $('#gigInfoContainer').offset().top
+    }, 700);
+  return false;
+});
+
+var checkemail = function(email) {
+  var validUmichEmail = /^[\w-\.]+@([umich+\.])+[\edu]{2,4}$/;
+  var filteremail = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+  if (email.match(filteremail) && email.match(validUmichEmail)) {
+    // redirect to feedback form!
+    console.log('Passed all validation');
+    return true;
+  } else {
+    // alert("Please enter a valid email address");
+    console.log('Please provide valid @umich.edu email');
+    $('#emailInput').popover({title: "ERROR", content: "Please provide valid @umich.edu email", placement: "top"});
     return false;
-  });
+  }
+}
 
-  // After the smooth scrolling is done, the steps will 'fadeIn' to the site
-  $('#moreInfoButton').on('click', function() {
-    $('.step_animation').addClass(fadeIn).one(animationEnd, function() {
-      $(this).removeClass(fadeIn);
+function checkbae() {
+  if (document.getElementById) {
+    console.log('In the if statment');
+    return checkemail($('#emailInput').val());
+  }
+}
+
+$('#accessButton').on('click', function() {
+  var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+  var shakeError = 'animated shake has-error';
+  var shake = 'animated shake';
+  var correct = 'has-success';
+  if (checkbae()) {
+    $('#accessForm').addClass(correct).one(animationEnd, function() {
+      $(this).removeClass(correct);
     });
-  });
+    $('#myModal').modal('show');
+  } else {
+    $('#accessForm').addClass(shakeError).one(animationEnd, function() {
+      $(this).removeClass(shakeError);
+    });
+  }
+});
 
+$('#supportButton').on('click', function() {
+  $('#supportModal').modal('show');
+});
+
+$('#eventHereButton').on('click', function() {
+  $('#eventModal').modal('show');
+});
+
+$('#addEventImageButton').on('click', function() {
+  $('#eventModal').modal('show');
 });

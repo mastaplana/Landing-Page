@@ -3,67 +3,292 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>Impronto | Landing Page</title>
+    <title>Impronto</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/animate.min.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/referral.css">
+    <link href='https://fonts.googleapis.com/css?family=Muli|Ubuntu:500' rel='stylesheet' type='text/css'>
   </head>
   <body>
-    <div id="mainContainer" class="container">
-      <div class="row">
-        <div class="col-md-6 col-md-offset-3">
-          <p id="impronto" class="lead text-center">Impronto</p>
-          <div class="text-center"><img src="/assets/images/ImprontoLogo.png" alt="Logo"></div>
-          <p id="tagline" class="text-center lead">Meetup Platform For Like Minded People</p>
-          <p id="taglineSecondary" class="text-center lead">We simplify meeting new people by integrating our platform with local commerce</p>
+
+    <div id="navContainer">
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand ubuntu-font" href="#homePage" id="navTitle"><font color="#ff7469">Imp</font><font color="#ffcf09">ronto</font></a>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#gigInfoContainer" class="navItem muli-font" id="listGigLink">List Your Gig?</a></li>
+              <!-- Above link spy scrolls to gigInfoContainer-->
+              <li><a href="#" class="navItem muli-font" id="supportButton">Support</a></li>
+              <!-- Above link goes to supportTypeForm-->
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="modal fade" id="supportModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              <!-- Change the width and height values to suit you best -->
+              <div class="typeform-widget" data-url="https://sidd4.typeform.com/to/nTzVYL" data-text="Impronto Support Form" style="width:100%;height:400px;"></div>
+              <script>
+              (function(){
+                var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';
+                if(!gi.call(d,id)){
+                  js=ce.call(d,'script');
+                  js.id=id;
+                  js.src=b+'widget.js';
+                  q=gt.call(d,'script')[0];
+                  q.parentNode.insertBefore(js,q)
+                }
+              })()
+              </script>
+
+            </div>
+          </div>
         </div>
       </div>
+
+    </div> <!-- navContainer -->
+
+    <div id="mainContainer" class="container-fluid">
       <div class="row">
         <div class="col-md-6 col-md-offset-3">
-          <p class="lead step_title text-center">Want Early Access?</p>
+          <h1 class="text-center ubuntu-font" id="siteTitle"><font color="#ff7469">Imp</font><font color="#ffcf09">ronto</font></h1>
+          <!-- Ubuntu-->
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <p class="text-center muli-font lead" id="sitePhrase">
+            Meet <font color="#ff7469">like-minded people</font> <font color="#ffcf09">pronto</font>
+          </p>
+        </div>
+      </div>
+
+      <div class="row" id="bulletList">
+        <div class="col-md-6 col-md-offset-3">
+          <ul>
+            <li class="listItem">We will host <font color="#ff7469">small group</font> activities</li>
+            <li class="listItem">Try out new things, discover yourself</li>
+            <li class="listItem">Make new friends with similar interests</li>
+            <li class="listItem">Beta access is exclusive to University of Michigan students with valid @umich.edu email address</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row" id="inputTitle">
+        <div class="col-md-6 col-md-offset-3">
+          <p class="text-center muli-font lead" id="inputTitleText">
+            Join now for <font color="#ffcf09">Free Beta Access</font>
+          </p>
+        </div>
+      </div>
+
+      <div class="row" id="inputDiv">
+        <div class="col-md-6 col-md-offset-3">
           <div class="text-center">
-            <a href="feedback.html" class="btn btn-default btn-lg outline" role="button" id="startButton">Let's Get Started</a>
+            <form class="form-inline" role="form">
+              <div class="form-group" id="accessForm">
+                <input type="text" class="form-control" placeholder="example@umich.edu" id="emailInput" data-container="body" data-trigger="focus" data-toggle="popover" data-placement="top" data-content="Please enter your @umich.edu email id">
+              </div><!-- form-group -->
+              <button class="btn butt" type="button" id="accessButton">Free Beta Access</button>
+            </form>
           </div>
         </div>
       </div>
+
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              <p class="text-center muli-font lead">
+                Hey, thanks for signing up! <br />We want to get you involved right away...
+                You will get one experience worth $10, for every 4 people you refer to sign up,
+                When we are ready, we will give you few options to choose the group activity from.
+              </p>
+              <script type="text/javascript">
+                window.Maitre = { uuid: "MF91223e02de" };
+              </script>
+              <script data-maitre src='https://maitreapp.co/widget.js' async></script>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div> <!-- mainContainer -->
+
+
+    <div id="eventsContainer" class="container-fluid">
+
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <h1 class="text-center ubuntu-font" id="eventsTitle"><font color="#ffcf09">What Are We Working On?</font></h1>
+        </div>
+      </div>
+
+      <div class="row" id="eventsKeys">
+        <div class="col-md-6 col-md-offset-3">
+          <p class="text-center muli-font lead" id="eventsKeysText">
+            Try new <font color="#ff7469">Activities</font> | Explore new <font color="#ffcf09">Experiences</font> | Build New <font color="#ff7469">Stories</font>
+          </p>
+        </div>
+      </div>
+
+      <div class="row" id="eventsPictureFirstRow">
+        <div class="col-lg-4 eventPicture">
+          <div class="text-center">
+            <img class="img-rounded" src="http://placehold.it/200x200" alt="Generic placeholder image">
+          </div>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4 eventPicture">
+          <div class="text-center">
+            <img class="img-rounded" src="http://placehold.it/200x200" alt="Generic placeholder image">
+          </div>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4 eventPicture">
+          <div class="text-center">
+            <img class="img-rounded" src="http://placehold.it/200x200" alt="Generic placeholder image">
+          </div>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+      <div class="row" id="eventsPictureSecondRow">
+        <div class="col-lg-4 eventPicture">
+          <div class="text-center">
+            <img class="img-rounded" src="http://placehold.it/200x200" alt="Generic placeholder image">
+          </div>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4 eventPicture">
+          <div class="text-center">
+            <img class="img-rounded" src="http://placehold.it/200x200" alt="Generic placeholder image">
+          </div>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4 eventPicture" id="addEventImage">
+          <div class="text-center">
+            <a id="addEventImageButton">
+              <img class="img-rounded" src="assets/images/addeventpic2.png" alt="Generic placeholder image">
+            </a>
+          </div>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+    </div> <!-- eventsContainer -->
+
+    <div id="bufferDiv">
+
     </div>
-    <div id="stepsContainer" class="container">
-      <div id="stepsTitle" class="step_animation">
-        <div class="text-center">
-          <h1 class="text-center">Create Your Next Event In 3 Easy Steps </h1>
+
+    <div id="gigInfoContainer" class="container-fluid">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <h1 class="text-center ubuntu-font" id="gigInfoTitle"><font color="#ffcf09">Want To List Your Gig?</font></h1>
+          <p class="lead muli-font gigTitle">
+            <font color="#ff7469">What Is Your Gig About?</font>
+          </p>
+          <p class="muli-font gigParagraph">
+            Our platform will eventually allow users to create their own activities (both free & paid ones) for other people to join. This will be a way for you to meet like-minded people doing something you enjoy. It’s going to carry a small fee, but by joining early, you get to do this for free.
+          </p>
+          <p class="lead muli-font gigTitle">
+            <font color="#ff7469">What Kind Of Activities Are We Allowed To Host?</font>
+          </p>
+          <p class="muli-font gigParagraph">
+            These activities can be anything fun, from playing frisbee at the diag, to watching a movie, or playing a game. We want give our users great experiences. Use your imagination, creativity and individuality. Obviously, there are limitations, because this is a meetup and friendship platform.
+          </p>
+          <p class="lead muli-font gigTitle">
+            <font color="#ff7469">How Do I List My Activity?</font>
+          </p>
+          <p class="muli-font gigParagraph">
+            We will make it easy for you. Just click <font color="#ffcf09"><a id="eventHereButton">here</a></font>!
+            <!-- Link "here" to type form-->
+          </p>
+          <p class="lead muli-font gigTitle">
+            <font color="#ff7469">What Happens Next?</font>
+          </p>
+          <p class="muli-font gigParagraph">
+            We will review your activity, and be in touch with you within the next 24 hours.
+          </p>
         </div>
       </div>
-      <div id="steps">
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="step_animation">
-              <div class="text-center">
-                <img src="/assets/images/stepOneImage.png" height="140px" width="140px" class="img-circle">
-              </div>
-              <p class="lead text-center step_title">Create An Event</p>
-              <p class="lead">Whether you just want to have coffee with some laid back people or you want to form a group to take over the next big concert, Impronto is the spot for all your event planning ideas.</p>
+
+      <div class="modal fade" id="eventModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              <!-- Change the width and height values to suit you best -->
+              <div class="typeform-widget" data-url="https://sidd4.typeform.com/to/B7JjQ5" data-text="Impronto Activity Form" style="width:100%;height:400px;"></div>
+              <script>
+              (function(){
+                var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';
+                if(!gi.call(d,id)){
+                  js=ce.call(d,'script');
+                  js.id=id;
+                  js.src=b+'widget.js';
+                  q=gt.call(d,'script')[0];
+                  q.parentNode.insertBefore(js,q)
+                }
+              })()
+              </script>
             </div>
           </div>
-          <div class="col-lg-4">
-            <div class="step_animation">
-              <div class="text-center">
-                <img src="/assets/images/stepTwoImage.png" height="140px" width="140px" class="img-circle">
+        </div>
+      </div>
+    </div> <!-- gigInfoContainer -->
+
+    <div class="container-fluid" id="maitreContainer">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <!-- <div id="maitre-widget-container" class="text-center">
+            <form name="validation" method="submit" onsubmit="return checkbae()"data-maitre-form>
+              <p data-maitre-main-header class="text-center"></p>
+              <div class="maitre-field hide" data-maitre-field-name>
+                <label></label>
+                <input type="text" name="name"/>
               </div>
-              <p class="lead text-center step_title">Share With Friends</p>
-              <p class="lead">Instantly share the event you just created on Facebook or a social media of your choosing. The more people you invite, the more fun you'll have.</p>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="step_animation">
-              <div class="text-center">
-                <img src="/assets/images/stepThreeImage.png" height="140px" width="140px" class="img-circle">
+              <div class="maitre-field text-center" data-maitre-field-email>
+                <label></label>
+                <input type="email" name="emailcheck" data-container="body" data-trigger="focus" data-toggle="popover" data-replacement="left" data-content="Please login with @umich.edu" id="emailCheckId" placeholder="youremail@umich.edu"/>
               </div>
-              <p class="lead text-center step_title">Have An Awesome Time</p>
-              <p class="lead">Most importantly, have an awesome time! Being in charge of the planning, sharing, and kicking off your events allows you to have complete customization. </p>
+              <div class="maitre-field text-center" data-maitre-field-submit>
+                <button type="submit" id="emailValButton" data-maitre-submit-button></button>
+              </div>
+              <a href="#" data-maitre-status></a>
+            </form>
+            <div data-maitre-content>
+              <h2 class="text-center" data-maitre-header></h2>
+              <p class="text-center" data-maitre-verification>We have sent you a confirmation email.<br>You have 15 minutes to confirm your position.</p>
+              <h4 class="text-center" data-maitre-people-ahead-number></h4>
+              <p  class="text-center" data-maitre-people-ahead-text></p>
+              <h4  class="text-center" data-maitre-people-behind-number></h4>
+              <p  class="text-center" data-maitre-people-behind-text></p>
+              <p  class="text-center" data-maitre-instructions></p>
+              <div data-maitre-share-container>
+                <a href="#" data-maitre-social-facebook target="_blank" class="maitre-widget-social"></a>
+                <a href="#" data-maitre-social-twitter target="_blank" class="maitre-widget-social"></a>
+                <a href="#" data-maitre-social-email target="_blank" class="maitre-widget-social"></a>
+                <a href="#" data-maitre-social-plain class="maitre-widget-social"></a>
+                <div data-maitre-share-plain>
+      	          <div data-maitre-share-plain-explanation>Or share your unique code</div>
+      	          <div data-maitre-share-plain-url></div>
+                </div>
+              </div>
             </div>
-          </div>
+            <script src="assets/js/maitreinit.js"></script>
+            <script data-maitre src="assets/js/maitrewidget.js" async></script>
+          </div> -->
         </div>
       </div>
     </div>
