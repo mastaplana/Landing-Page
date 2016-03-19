@@ -24,44 +24,48 @@ html {
 
   }
 
+  .navbar li{
+    padding-right: 30px;
+  }
+
   /********************************
             MAIN CONTAINER
   *********************************/
 
   #mainContainer {
     width: 100%;
+    height: 700px;
   }
 
   #siteTitle {
-    font-size: 6.0em;
+    padding-top: 20px;
+    font-size: 5.5em;
   }
 
   #sitePhrase {
-    font-size: 3.0em;
-  }
-
-  .navItem {
     font-size: 1.6em;
+    padding-top: 5px;
   }
 
   #bulletList {
-    padding-top: 20px;
+    padding-top: 30px;
   }
 
   .listItem {
-    font-size: 1.8em;
+    font-size: 1.3em;
   }
 
   #inputTitle {
-    padding-top: 60px;
+    padding-top: 40px;
   }
 
   #inputTitleText {
-    font-size: 2.0em;
+    font-size: 1.5em;
+    margin: 0 auto;
   }
 
   #accessButtonDiv {
-    padding-top: 10px;
+    padding-top: 0px;
     display: block;
     float: left;
   }
@@ -114,11 +118,12 @@ html {
   #eventsContainer {
     width: 100%;
     height: 1600px;
-    padding-top: 100px;
+    padding-top: 20px;
   }
 
   #eventsTitle {
     padding-top: 30px;
+    font-size: 2.0em;
   }
 
   #eventsKeys {
@@ -126,7 +131,7 @@ html {
   }
 
   #eventsKeysText {
-    font-size: 1.6em;
+    font-size: 1.4em;
   }
 
   #eventsPictureFirstRow {
@@ -135,22 +140,6 @@ html {
 
   #eventsPictureSecondRow {
     padding-top: 0px;
-  }
-
-  #eventsTitle {
-    padding-top: 30px;
-  }
-
-  #eventsKeys {
-    padding-top: 35px;
-  }
-
-  #eventsKeysText {
-    font-size: 1.6em;
-  }
-
-  #eventsPictureFirstRow {
-    padding-top: 20px;
   }
 
   img {
@@ -169,29 +158,33 @@ html {
   #gigInfoContainer {
     width: 100%;
     height: 800px;
-    padding-top: 30px;
+    padding-top: 0px;
   }
 
   #gigInfoTitle {
     padding-top: 50px;
-    font-size: 3.6em;
+    font-size: 2.4em;
   }
 
   .gigTitle {
-    font-size: 1.8em;
-    padding-top: 15px;
+    padding-top: 10px;
   }
 
-  .gigParagraph {
+  /*.gigParagraph {
     font-size: 1.2em;
-  }
+    padding-top: 1px;
+  } */
 
   #eventHereButton {
     text-decoration: none;
     color: inherit;
   }
 
-  #eventHereButton a:hover {
+  #eventHereButton:hover {
+    color: #ff7469;
+  }
+
+  #eventHereButton:active {
     color: #ff7469;
   }
 }
@@ -213,32 +206,37 @@ html {
 
     }
 
+    .navbar li{
+      padding-right: 30px;
+    }
+
+    .navbar-brand {
+      padding-left: 100px;
+    }
+
     /********************************
               MAIN CONTAINER
     *********************************/
 
     #mainContainer {
       width: 100%;
+      height: 760px;
     }
 
     #siteTitle {
-      font-size: 6.0em;
+      font-size: 5.5em;
     }
 
     #sitePhrase {
-      font-size: 3.0em;
-    }
-
-    .navItem {
-      font-size: 1.6em;
+      font-size: 2.5em;
     }
 
     #bulletList {
-      padding-top: 20px;
+      padding-top: 40px;
     }
 
     .listItem {
-      font-size: 1.8em;
+      font-size: 1.6em;
     }
 
     #inputTitle {
@@ -247,10 +245,11 @@ html {
 
     #inputTitleText {
       font-size: 2.0em;
+      margin: 0 auto;
     }
 
     #accessButtonDiv {
-      padding-top: 10px;
+      padding-top: 0px;
       display: block;
       float: left;
     }
@@ -301,13 +300,14 @@ html {
     *********************************/
 
     #eventsContainer {
-      height: 800px;
+      height: 840px;
       width: 100%;
-      padding-top: 125px;
+      padding-top: 0px;
     }
 
     #eventsTitle {
       padding-top: 30px;
+      font-size: 3.5em;
     }
 
     #eventsKeys {
@@ -353,22 +353,23 @@ html {
 
     #gigInfoContainer {
       height: 800px;
-      padding-top: 70px;
+      padding-top: 60px;
     }
 
     #gigInfoTitle {
-      padding-top: 50px;
       font-size: 3.6em;
     }
 
     .gigTitle {
-      font-size: 1.8em;
-      padding-top: 15px;
+      padding-top: 10px;
+
     }
 
-    .gigParagraph {
+    /*.gigParagraph {
       font-size: 1.2em;
-    }
+      padding-top: 1px;
+      line-height: normal;
+    } */
 
     #eventHereButton {
       text-decoration: none;
@@ -376,6 +377,10 @@ html {
     }
 
     #eventHereButton:hover {
+      color: #ff7469;
+    }
+
+    #eventHereButton:active {
       color: #ff7469;
     }
 }
