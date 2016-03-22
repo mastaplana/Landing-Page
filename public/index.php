@@ -1,3 +1,8 @@
+<?php
+  include 'validation.php';
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -12,13 +17,12 @@
     <link rel="stylesheet" href="assets/css/animate.min.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/referral.css">
     <link href='https://fonts.googleapis.com/css?family=Muli|Ubuntu:500' rel='stylesheet' type='text/css'>
   </head>
   <body>
 
     <div id="navContainer">
-      <nav class="navbar navbar-default">
+      <nav class="navbar navbar-inner">
         <div class="container-fluid">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -103,11 +107,11 @@
       <div class="row" id="inputDiv">
         <div class="col-md-6 col-md-offset-3">
           <div class="text-center">
-            <form class="form-inline" role="form">
+            <form class="form-inline" role="form" id="emailForm" method="post">
               <div class="form-group" id="accessForm">
-                <input type="text" class="form-control input-lg" placeholder="example@umich.edu" id="emailInput" data-container="body" data-trigger="focus" data-toggle="popover" data-placement="top" data-content="Please enter your @umich.edu email id">
+                <input type="text" name="email" class="form-control input-lg" placeholder="example@umich.edu" id="emailInput" data-container="body" data-trigger="focus" data-toggle="popover" data-placement="top" data-content="Please enter your @umich.edu email id">
               </div><!-- form-group -->
-              <button class="btn butt" type="button" id="accessButton">Beta Access</button>
+              <button class="btn butt" type="submit" name="submit" id="accessButton">Beta Access</button>
             </form>
           </div>
         </div>
@@ -138,68 +142,95 @@
     <div id="eventsContainer" class="container-fluid">
 
       <div class="row">
-        <div class="col-md-6 col-md-offset-3">
+        <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3">
           <h3 class="text-center ubuntu-font" id="eventsTitle"><font color="#ffcf09">What Are We Working On?</font></h3>
         </div>
       </div>
 
       <div class="row" id="eventsKeys">
-        <div class="col-md-6 col-md-offset-3">
-          <p class="text-center muli-font lead" id="eventsKeysText">
-            Try new <font color="#ff7469">Activities</font> | Explore new <font color="#ffcf09">Experiences</font> | Build New <font color="#ff7469">Stories</font>
-          </p>
+        <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3">
+          <div class="text-center">
+            <p class="muli-font" id="eventsKeysText">
+              Try New <font color="#ff7469">Activities</font> | Explore New <font color="#ffcf09">Experiences</font> | Build New <font color="#ff7469">Stories</font>
+            </p>
+          </div>
         </div>
       </div>
 
       <div class="row" id="eventsPictureFirstRow">
-        <div class="col-lg-4 eventPicture">
+        <div class="col-lg-4 col-md-4 col-sm-4 eventPicture">
           <div class="text-center">
-            <img class="img-rounded" src="assets/images/concertPicture.jpg" alt="Generic placeholder image">
+            <img class="img-rounded" src="assets/images/pic1.png" alt="Generic placeholder image">
+          </div>
+          <div class="text-center">
+            <h4 class="muli-font">
+              Try out a new restaurant with a bunch of people who share similar taste!
+            </h4>
           </div>
         </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4 eventPicture">
+        <div class="col-lg-4 col-md-4 col-sm-4 eventPicture">
           <div class="text-center">
-            <img class="img-rounded" src="assets/images/cookingPicture.jpg" alt="Generic placeholder image">
+            <img class="img-rounded" src="assets/images/pic2.png" alt="Generic placeholder image">
+          </div>
+          <div class="text-center">
+            <h4 class="muli-font">
+              Something more fun? Plan local short trips for activities such as skiing!
+            </h4>
           </div>
         </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4 eventPicture">
+        <div class="ccol-lg-4 col-md-4 col-sm-4 eventPicture">
           <div class="text-center">
-            <img class="img-rounded" src="assets/images/festivalPicture.jpg" alt="Generic placeholder image">
+            <img class="img-rounded" src="assets/images/pic3.png" alt="Generic placeholder image">
+          </div>
+          <div class="text-center">
+            <h4 class="muli-font">
+              Meet up before the movie for coffee, get into a huddle and take a pic!
+            </h4>
           </div>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 
       <div class="row" id="eventsPictureSecondRow">
-        <div class="col-lg-4 eventPicture">
+        <div class="ccol-lg-4 col-md-4 col-sm-4 eventPicture">
           <div class="text-center">
-            <img class="img-rounded" src="assets/images/skiPicture.jpg" alt="Generic placeholder image">
+            <img class="img-rounded" src="assets/images/pic4.png" alt="Generic placeholder image">
+          </div>
+          <div class="text-center">
+            <h4 class="muli-font">
+              Want some company to go see your favorite band live?<br />Plan it with us!
+            </h4>
           </div>
         </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4 eventPicture">
+        <div class="ccol-lg-4 col-md-4 col-sm-4 eventPicture">
           <div class="text-center">
-            <img class="img-rounded" src="assets/images/zumbaPicture.jpg" alt="Generic placeholder image">
+            <img class="img-rounded" src="assets/images/pic5.png" alt="Generic placeholder image">
+          </div>
+          <div class="text-center">
+            <h4 class="muli-font">
+              Make friends during an evening of bowling!
+            </h4>
           </div>
         </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4 eventPicture" id="addEventImage">
+        <div class="col-lg-4 col-md-4 col-sm-4 eventPicture" id="addEventImage">
           <div class="text-center">
             <a id="addEventImageButton">
-              <img class="img-rounded" src="assets/images/addeventpic2.png" alt="Generic placeholder image">
+              <!-- <img class="img-rounded" src="assets/images/addeventpic2.png" alt="Generic placeholder image"> -->
+              <button class="btn butt" id="eventButton">Have An Idea For<br />Your Own Activity?<br /><br /><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span><br /><br />Add Here!</button>
             </a>
           </div>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
-
     </div> <!-- eventsContainer -->
 
     <div id="gigInfoContainer" class="container-fluid">
       <div class="row">
-        <div class="col-md-6 col-md-offset-3">
+        <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3">
           <h1 class="text-center ubuntu-font" id="gigInfoTitle"><font color="#ffcf09">Want To List Your Gig?</font></h1>
           <h3 class="muli-font gigTitle">
             <font color="#ff7469">What Is Your Gig About?</font>
           </h3>
           <p class="lead muli-font gigParagraph">
-            Our platform will eventually allow users to create their own activities (both free & paid ones) for other people to join. This will be a way for you to meet like-minded people doing something you enjoy. It’s going to carry a small fee, but by joining early, you get to do this for free.
+            Our platform will eventually allow users to create their own activities (both free & paid ones) for other people to join. This will be a way for you to meet like-minded people doing something you enjoy. It will carry a small fee, but by joining early, you will be able to do this free of charge.
           </p>
           <h3 class="muli-font gigTitle">
             <font color="#ff7469">What Kind Of Activities Are We Allowed To Host?</font>
@@ -247,50 +278,6 @@
       </div>
     </div> <!-- gigInfoContainer -->
 
-    <div class="container-fluid" id="maitreContainer">
-      <div class="row">
-        <div class="col-md-6 col-md-offset-3">
-          <!-- <div id="maitre-widget-container" class="text-center">
-            <form name="validation" method="submit" onsubmit="return checkbae()"data-maitre-form>
-              <p data-maitre-main-header class="text-center"></p>
-              <div class="maitre-field hide" data-maitre-field-name>
-                <label></label>
-                <input type="text" name="name"/>
-              </div>
-              <div class="maitre-field text-center" data-maitre-field-email>
-                <label></label>
-                <input type="email" name="emailcheck" data-container="body" data-trigger="focus" data-toggle="popover" data-replacement="left" data-content="Please login with @umich.edu" id="emailCheckId" placeholder="youremail@umich.edu"/>
-              </div>
-              <div class="maitre-field text-center" data-maitre-field-submit>
-                <button type="submit" id="emailValButton" data-maitre-submit-button></button>
-              </div>
-              <a href="#" data-maitre-status></a>
-            </form>
-            <div data-maitre-content>
-              <h2 class="text-center" data-maitre-header></h2>
-              <p class="text-center" data-maitre-verification>We have sent you a confirmation email.<br>You have 15 minutes to confirm your position.</p>
-              <h4 class="text-center" data-maitre-people-ahead-number></h4>
-              <p  class="text-center" data-maitre-people-ahead-text></p>
-              <h4  class="text-center" data-maitre-people-behind-number></h4>
-              <p  class="text-center" data-maitre-people-behind-text></p>
-              <p  class="text-center" data-maitre-instructions></p>
-              <div data-maitre-share-container>
-                <a href="#" data-maitre-social-facebook target="_blank" class="maitre-widget-social"></a>
-                <a href="#" data-maitre-social-twitter target="_blank" class="maitre-widget-social"></a>
-                <a href="#" data-maitre-social-email target="_blank" class="maitre-widget-social"></a>
-                <a href="#" data-maitre-social-plain class="maitre-widget-social"></a>
-                <div data-maitre-share-plain>
-      	          <div data-maitre-share-plain-explanation>Or share your unique code</div>
-      	          <div data-maitre-share-plain-url></div>
-                </div>
-              </div>
-            </div>
-            <script src="assets/js/maitreinit.js"></script>
-            <script data-maitre src="assets/js/maitrewidget.js" async></script>
-          </div> -->
-        </div>
-      </div>
-    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <script src="assets/js/main.js"></script>

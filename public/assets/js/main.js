@@ -1,22 +1,3 @@
-//ANIMATIONS CODE
-/**$(function() {
-  var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-  var fadeIn = 'animated fadeIn';
-  var bounceInLeft = 'animated bounceInLeft';
-
-  $('#mainContainer').addClass(bounceInLeft).one(animationEnd, function() {
-    $(this).removeClass(bounceInLeft);
-  });
-
-  $("[data-toggle = 'popover']").popover();
-});
-*/
-
-$(function() {
-  $("[data-toggle = 'popover']").popover();
-});
-
-/* Smooth scroll effect when users click 'listgig' */
 $('#listGigLink').click(function() {
   $('html, body').animate({
       scrollTop: $('#gigInfoContainer').offset().top
@@ -24,43 +5,64 @@ $('#listGigLink').click(function() {
   return false;
 });
 
+var showMaitreWidget = function() {
+  $('#myModal').modal('show');
+}
+
 var checkemail = function(email) {
   var validUmichEmail = /^[\w-\.]+@([umich+\.])+[\edu]{2,4}$/;
   var filteremail = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
   if (email.match(filteremail) && email.match(validUmichEmail)) {
     // redirect to feedback form!
-    console.log('Passed all validation');
+    // console.log('Passed all validation');
     return true;
   } else {
     // alert("Please enter a valid email address");
-    console.log('Please provide valid @umich.edu email');
+    // console.log('Please provide valid @umich.edu email');
     $('#emailInput').popover({title: "ERROR", content: "Please provide valid @umich.edu email", placement: "top"});
     return false;
   }
 }
 
-function checkbae() {
+var checkbae = function() {
   if (document.getElementById) {
-    console.log('In the if statment');
+    // console.log('In the if statment');
     return checkemail($('#emailInput').val());
   }
 }
 
-$('#accessButton').on('click', function() {
-  var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-  var shakeError = 'animated shake has-error';
-  var shake = 'animated shake';
-  var correct = 'has-success';
-  if (checkbae()) {
-    $('#accessForm').addClass(correct).one(animationEnd, function() {
-      $(this).removeClass(correct);
-    });
-    $('#myModal').modal('show');
-  } else {
-    $('#accessForm').addClass(shakeError).one(animationEnd, function() {
-      $(this).removeClass(shakeError);
-    });
-  }
+
+$(document).ready(function() {
+  $('#accessButton').on('click', function() {
+    event.preventDefault();
+    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+    var shakeError = 'animated shake has-error';
+    var shake = 'animated shake';
+    var correct = 'has-success';
+    var email = $('#emailInput').val();
+    if (checkbae()) {
+      $('#accessForm').addClass(correct);
+      $.ajax({
+        type: "post",
+        data: {
+          email: email,
+          submit: 1
+        },
+        url: "validation.php",
+        success: function(html) {
+          console.log('Success');
+        }
+      });
+      showMaitreWidget();
+      $('#accessForm').removeClass(correct);
+      $('#emailInput').val("");
+    } else {
+      $('#accessForm').addClass(shakeError).one(animationEnd, function() {
+        $(this).removeClass(shakeError);
+      });
+      // alert('Not successful');
+    }
+  });
 });
 
 $('#supportButton').on('click', function() {
@@ -73,4 +75,8 @@ $('#eventHereButton').on('click', function() {
 
 $('#addEventImageButton').on('click', function() {
   $('#eventModal').modal('show');
+});
+
+$(function() {
+  $("[data-toggle = 'popover']").popover();
 });

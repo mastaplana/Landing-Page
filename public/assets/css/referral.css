@@ -56,18 +56,18 @@ text-align: center !important;
 border-radius: 4px !important;
 text-shadow: 0 1px 0 #fff !important;
 font-weight: 400 !important;
-background-color: #009dd8 !important;
+background-color: #ff7469 !important;
 color: #fff !important;
 cursor: pointer !important;
-background-image: -webkit-linear-gradient(top,#00b4f5,#008dc5) !important;
-background-image: linear-gradient(to bottom,#00b4f5,#008dc5) !important;
+background-image: -webkit-linear-gradient(top,#ff7469,#ff7469) !important;
+background-image: linear-gradient(to bottom,#ff7469,#ff7469) !important;
 border-color: rgba(0,0,0,.2) !important;
 border-bottom-color: rgba(0,0,0,.4) !important;
 text-shadow: 0 -1px 0 rgba(0,0,0,.2) !important;
 }
 
 [data-maitre-submit-button]:active {
-	background-color: #008abf !important;
+	background-color: #ff7469!important;
   color: #fff !important;
   background-image: none !important;
   border-color: rgba(0,0,0,.2) !important;

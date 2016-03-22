@@ -1,0 +1,186 @@
+html {
+  height: 100%;
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+
+  .muli-font {
+    font-family: 'Muli', sans-serif;
+  }
+  .ubuntu-font {
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  /********************************
+            NAVBAR CONTAINER
+  *********************************/
+
+  #navContainer {
+
+  }
+
+  .navbar li{
+    padding-right: 30px;
+  }
+
+  /********************************
+            MAIN CONTAINER
+  *********************************/
+
+  #mainContainer {
+    width: 100%;
+    height: 700px;
+  }
+
+  #siteTitle {
+    padding-top: 20px;
+    font-size: 5.5em;
+  }
+
+  #sitePhrase {
+    font-size: 1.6em;
+    padding-top: 5px;
+  }
+
+  #bulletList {
+    padding-top: 30px;
+    padding-left: 120px;
+  }
+
+  .listItem {
+    font-size: 1.3em;
+  }
+
+  #inputTitle {
+    padding-top: 40px;
+  }
+
+  #inputTitleText {
+    font-size: 1.5em;
+    margin: 0 auto;
+  }
+
+  #accessButtonDiv {
+    padding-top: 0px;
+    display: block;
+    float: left;
+  }
+
+  .butt{
+    padding: .75rem;
+    margin: .375rem;
+    height: 45px;
+    background-color: white;
+    border-radius: 4px;
+  }
+
+  .butt:focus{
+    outline: none;
+  }
+
+  .butt {
+    border: 2px solid #ff7469;
+    line-height: 1.375;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+
+    font-weight: 700;
+
+    color: #ff7469;
+
+    cursor: pointer;
+    -webkit-animation: hue 60s infinite linear;
+  }
+
+  .butt:hover {
+    background-color: #ff7469;
+    color: white;
+  }
+
+  .wrap {
+    max-width: 38rem;
+    margin: 0 auto;
+  }
+
+  .island {
+    padding: 1.5rem;
+  }
+
+
+  /********************************
+            EVENTS CONTAINER
+  *********************************/
+
+  #eventsContainer {
+    width: 100%;
+    height: 1600px;
+    padding-top: 20px;
+  }
+
+  #eventsTitle {
+    padding-top: 30px;
+    font-size: 2.0em;
+  }
+
+  #eventsKeys {
+    padding-top: 35px;
+  }
+
+  #eventsKeysText {
+    font-size: 1.4em;
+  }
+
+  #eventsPictureFirstRow {
+    padding-top: 20px;
+  }
+
+  #eventsPictureSecondRow {
+    padding-top: 0px;
+  }
+
+  img {
+    height: 200px;
+    width: 200px;
+  }
+
+  .eventPicture {
+    padding-top: 10px;
+  }
+
+  /********************************
+            GIG INFO CONTAINER
+  *********************************/
+
+  #gigInfoContainer {
+    width: 100%;
+    height: 800px;
+    padding-top: 0px;
+  }
+
+  #gigInfoTitle {
+    padding-top: 50px;
+    font-size: 2.4em;
+  }
+
+  .gigTitle {
+    padding-top: 10px;
+  }
+
+  /*.gigParagraph {
+    font-size: 1.2em;
+    padding-top: 1px;
+  } */
+
+  #eventHereButton {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  #eventHereButton:hover {
+    color: #ff7469;
+  }
+
+  #eventHereButton:active {
+    color: #ff7469;
+  }
+}
