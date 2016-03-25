@@ -1,0 +1,39 @@
+/*@media (max-height: 425px) {*/
+  #clock {
+    padding-bottom: 5px;
+  }
+
+  #clockdiv {
+      font-family: sans-serif;
+      color: white;
+      display: none;
+      font-weight: 100;
+      text-align: center;
+      font-size: 21px;
+  }
+
+  #clockdiv > div{
+      padding: 2px;
+      border-radius: 3px;
+      background: #FF7469;
+      display: inline-block;
+  }
+
+
+  #clockdiv div > span{
+      padding: 2px;
+      border-radius: 3px;
+      display: inline-block;
+      background-color: #FF7469;
+      color: ;
+  }
+
+  .smalltext{
+      padding-top: 5px;
+      font-size: 5px;
+  }
+
+  .white-font {
+    color: white !important;
+  }
+/*}*/

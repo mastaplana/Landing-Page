@@ -5,8 +5,8 @@
       die("Error Connecting To Database");
     }
     if (validateEmail($_POST['email'])) {
-      $query = "INSERT INTO `users` (`email`) VALUES ('".mysqli_real_escape_string($link, $_POST['email'])."')";
-      mysqli_query($link, $query);
+      $addEmail = "INSERT INTO `users` (`email`) VALUES ('".mysqli_real_escape_string($link, $_POST['email'])."')";
+      mysqli_query($link, $addEmail);
     }
   }
 

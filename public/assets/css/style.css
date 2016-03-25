@@ -1,0 +1,478 @@
+/*#FF7469
+#FFCF09*/
+
+@media (max-width: 320px) {
+  #taglineOne {
+    font-size: 2.0em;
+  }
+
+  #taglineTwo {
+    font-size: 2.0em;
+  }
+}
+@media (min-width: 321px) and (max-width: 375px) {
+  #taglineOne {
+    font-size: 2.0em;
+  }
+
+  #taglineTwo {
+    font-size: 2.0em;
+  }
+}
+
+.center-block {
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.info-answer {
+  padding-bottom: 20px;
+}
+
+.muli {
+  font-family: 'Muli', sans-serif;
+}
+
+.ubuntu {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.btn-primary {
+  background-color: #FF7469;
+  border-color: #FF7469;
+}
+
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+  background-color: #ff7e75;
+  border-color: #ff7e75;
+}
+
+#createEvent {
+  height: 60% !important;
+  width: 75%;
+  background-color: transparent;
+  border-color: white;
+  color: white;
+  border-width: 2px;
+}
+
+#createEvent:hover, #createEvent:active {
+  border-color: white;
+  background-color: white;
+  color: #FF7469;
+}
+
+#mainContainer {
+  color: black;
+  padding-bottom: 50px;
+}
+
+#eventsContainer h3 {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  color: white;
+}
+
+#imagesSection {
+  padding-top: 20px;
+}
+
+#infoContainer h2 {
+  padding-bottom: 20px;
+  color: #FFCF09;
+}
+
+#infoContainer h5 {
+  color: #FF7469;
+}
+
+#infoContainer p {
+  color: black;
+}
+
+.nav-item {
+  color: black;
+}
+
+#mainContainer {
+  background-color:transparent;
+}
+
+#infoContainer {
+  background-color: transparent;
+}
+
+#eventsContainer {
+  background-color: #FF7469;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover, a:active {
+  color: #ff7469;
+}
+
+#emailInput {
+  padding-top: 0px !important;
+  width: 100%;
+}
+
+#buttonDiv {
+  padding-top: 5px;
+}
+#howItWorks {
+  background-color: #5f6266;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  color: white;
+}
+
+.hiw-title {
+  padding-top: 60px;
+}
+
+.hiw-des-title {
+  padding-top: 45px !important;
+  font-family: "proxima-nova",sans-serif;
+}
+
+.hiw-image {
+  padding-top: 75px;
+}
+
+.hiw-des {
+  padding-bottom: 70px;
+}
+
+#howItWorks span {
+  color: #FFCF09;
+}
+
+#howItWorks i {
+  color: #ff7469;
+}
+
+small {
+  font-family: "proxima-nova",sans-serif;
+}
+
+#betaText {
+  padding-top: 6px !important;
+}
+
+
+.figure-caption {
+  color: white;
+}
+
+#addButton {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+#figureButton {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+#inputContainer {
+  padding-top: 10px;
+}
+
+i:hover {
+  color: #FFCF09;
+}
+
+#figureButton{
+  border-radius: 2px;
+  border-width: thin;
+  border-color: white;
+  boder-style: solid;
+}
+
+
+
+
+/* Small Phones */
+@media (max-width: 33em) {
+
+  #mainContainer {
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
+  #mainContainer .need-space {
+    padding-top: 10px;
+  }
+
+  #inputContent {
+    padding-top: 10px;
+  }
+
+  #taglineOne {
+
+  }
+
+  #taglineTwo {
+
+  }
+
+  #eventsContainer {
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  #infoContainer {
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+
+  }
+
+  #infoContainer .row {
+    padding-top: 20px;
+  }
+
+  #mainContainer form {
+    padding-top: 0px !important;
+  }
+
+}
+
+@media (min-width: 321px) and (max-width: 375px) {
+  #taglineOne {
+
+  }
+
+  #taglineTwo {
+
+  }
+}
+
+@media (min-width: 376px) and (max-width: 425px) {
+  #taglineOne {
+
+  }
+
+  #taglineTwo {
+
+  }
+}
+
+/* Medium and Large Phones */
+@media (min-width: 34em) {
+
+  #mainContainer {
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  #mainContainer .need-space {
+    padding-top: 10px;
+  }
+
+  #inputContent {
+    padding-top: 10px;
+  }
+
+  #taglineTwo {
+
+  }
+
+  #eventsContainer {
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .card-img-top {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #infoContainer {
+
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  #infoContainer .row {
+    padding-top: 20px;
+  }
+
+}
+
+/* Medium devices (tablets, 48em and up) */
+@media (min-width: 48em) {
+
+  .right-nav-item {
+    padding-right: 50px;
+  }
+
+  .navbar-brand {
+    padding-left: 50px;
+  }
+
+  #mainContainer {
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  #mainContainer .need-space {
+    padding-top: 20px;
+  }
+
+  #inputContent {
+    padding-top: 20px;
+  }
+
+  #taglineOne {
+
+  }
+
+  #taglineTwo {
+
+  }
+
+  .card-img-top {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #eventsContainer {
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  #infoContainer {
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    padding-left: 100px !important;
+    padding-right: 100px !important;
+  }
+
+  #infoContainer .row {
+    padding-top: 40px;
+  }
+
+}
+
+
+/* Large devices (desktops, 62em and up) */
+@media (min-width: 62em) {
+
+  .right-nav-item {
+    padding-right: 50px;
+  }
+
+  .navbar-brand {
+    padding-left: 50px;
+  }
+
+  #mainContainer {
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  #mainContainer .need-space {
+    padding-top: 20px;
+  }
+
+  #inputContent {
+    padding-top: 20px;
+  }
+
+  #taglineOne {
+
+  }
+
+  #taglineTwo {
+
+  }
+
+  #eventsContainer {
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .card-img-top {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  #infoContainer {
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  #infoContainer .row {
+    padding-top: 40px;
+  }
+
+}
+
+/* Extra large devices (large desktops, 75em and up) */
+@media (min-width: 75em) {
+
+  .right-nav-item {
+    padding-right: 50px;
+  }
+
+  .navbar-brand {
+    padding-left: 50px;
+  }
+
+  #mainContainer {
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  #mainContainer .need-space {
+    padding-top: 20px;
+  }
+
+  #inputContent {
+    padding-top: 20px;
+  }
+
+
+  #eventsContainer {
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  #infoContainer {
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .card-img-top {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  #infoContainer .row {
+    padding-top: 40px;
+  }
+
+}

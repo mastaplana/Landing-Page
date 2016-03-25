@@ -1,6 +1,6 @@
 $('#listGigLink').click(function() {
   $('html, body').animate({
-      scrollTop: $('#gigInfoContainer').offset().top
+      scrollTop: $('#infoContainer').offset().top
     }, 700);
   return false;
 });
@@ -13,13 +13,11 @@ var checkemail = function(email) {
   var validUmichEmail = /^[\w-\.]+@([umich+\.])+[\edu]{2,4}$/;
   var filteremail = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
   if (email.match(filteremail) && email.match(validUmichEmail)) {
-    // redirect to feedback form!
     // console.log('Passed all validation');
     return true;
   } else {
-    // alert("Please enter a valid email address");
     // console.log('Please provide valid @umich.edu email');
-    $('#emailInput').popover({title: "ERROR", content: "Please provide valid @umich.edu email", placement: "top"});
+    // $('#emailInput').popover({title: "ERROR", content: "Please provide valid @umich.edu email", placement: "top"});
     return false;
   }
 }
@@ -36,12 +34,11 @@ $(document).ready(function() {
   $('#accessButton').on('click', function() {
     event.preventDefault();
     var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-    var shakeError = 'animated shake has-error';
-    var shake = 'animated shake';
+    var shakeError = 'animated shake has-danger';
     var correct = 'has-success';
     var email = $('#emailInput').val();
     if (checkbae()) {
-      $('#accessForm').addClass(correct);
+      $('#emailInput').addClass(correct);
       $.ajax({
         type: "post",
         data: {
@@ -49,18 +46,17 @@ $(document).ready(function() {
           submit: 1
         },
         url: "validation.php",
-        success: function(html) {
-          console.log('Success');
+        function(html) {
+          console.log(email+' successfully added to database');
         }
       });
       showMaitreWidget();
-      $('#accessForm').removeClass(correct);
+      $('#emailInput').removeClass(correct);
       $('#emailInput').val("");
     } else {
-      $('#accessForm').addClass(shakeError).one(animationEnd, function() {
+      $('#emailInput').addClass(shakeError).one(animationEnd, function() {
         $(this).removeClass(shakeError);
       });
-      // alert('Not successful');
     }
   });
 });
@@ -73,10 +69,6 @@ $('#eventHereButton').on('click', function() {
   $('#eventModal').modal('show');
 });
 
-$('#addEventImageButton').on('click', function() {
+$('#squareButton').on('click', function() {
   $('#eventModal').modal('show');
-});
-
-$(function() {
-  $("[data-toggle = 'popover']").popover();
 });
