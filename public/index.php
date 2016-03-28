@@ -2,14 +2,16 @@
   include 'validation.php';
 ?>
 
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content="Meeting like-minded people through awesome events">
-    <meta name="keywords" content="Events,Hosting,Fun,Activities">
-    <meta name="author" content="Charles Roth">
+    <meta name="description" content="Explore Fun Activities Around You! Meet Like-minded People Pronto!">
+    <meta name="keywords" content="Events,Hosting,Fun,Activities,Meetup">
+    <!-- <meta name="author" content="Charles Roth"> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/style.css"/>
@@ -17,6 +19,7 @@
     <link rel="stylesheet" href="assets/css/animate.css"/>
     <link rel="stylesheet" href="assets/css/animate.min.css"/>
     <link rel="stylesheet" href="assets/css/clock.css"/>
+    <link rel="stylesheet" href="assets/css/flaticon.css"/>
     <link href='https://fonts.googleapis.com/css?family=Muli|Ubuntu' rel='stylesheet' type='text/css'>
     <title>Impronto</title>
     <script>
@@ -35,7 +38,7 @@
     <div id="navContainer">
       <nav class="navbar fixed-top navbar-light">
         <div class="navbar-header">
-          <a class="navbar-brand ubuntu" href="http://impronto.com/testsite"><font color="#FF7469">Im</font><font color="#FFCF09">pronto</font></a>
+          <a class="navbar-brand ubuntu" href="http://impronto.com"><font color="#FF7469">Im</font><font color="#FFCF09">pronto</font></a>
           <button class="navbar-toggler hidden-sm-up pull-xs-right" type="button" data-toggle="collapse" data-target="#navCollapse">
             &#9776;
           </button>
@@ -43,7 +46,7 @@
         <div class="collapse navbar-toggleable-xs" id="navCollapse">
           <ul class="nav navbar-nav pull-md-right">
             <li class="nav-item muli right-nav-item">
-              <a class="nav-link" href="#infoContainer" id="listGigLink">List your gig</a>
+              <a class="nav-link" href="#infoContainer" id="listGigLink">How it works</a>
             </li>
             <li class="nav-item muli right-nav-item">
               <a class="nav-link" href="#" id="supportButton">Support</a>
@@ -81,21 +84,18 @@
     <div id="mainContainer" class="container-fluid">
       <div class="mainContent">
         <div class="row need-space">
-          <div class="center-block">
-            <h1 class="text-xs-center muli" id="taglineOne">
-              Explore <font color="#FF7469">Fun Activites</font> <font color="#FFCF09">Around You</font>
-            </h1>
-            <h2 class="text-xs-center muli" id="taglineTwo">
-              Meet <font color="#FF7469">Like-minded People</font> <font color="#FFCF09">Pronto</font>
+          <div class="text-xs-center">
+            <h2 class="text-xs-center muli taglineTwo">
+              Meet <font color="#FF7469">like-minded people</font> in a new city.
+            </h2>
+            <h2 class="text-xs-center muli taglineTwo">
+              Better yet, meet them in the <font color="#FFCF09">same city</font>!
             </h2>
           </div>
         </div>
         <div class="row need-space">
           <div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3" style="text-align: justify;">
-              <p class="muli">Choose from a list of <font color="#FF7469">small group</font> activities.
-              Make new, <font color="#FF7469">like-minded</font> friends.
-              <font color="#FF7469">Discover</font> yourself.
-              <font color="#FF7469">Exclusive</font> to U-M Students with a <font color="#FF7469">@umich.edu</font> email.</p>
+              <p class="muli">Sign-up or create <font color="#FF7469">a fun activity</font> that other <font color="#FF7469">Im</font><font color="#FFCF09">pronto</font> users can sign up for. Try something <font color="#FFCF09">new and fun</font>! Make new, <font color="#FF7469">like-minded</font> friends. <font color="#FFCF09">Be yourself</font>.<br> Currently, <font color="#FF7469">exclusive</font> to U-Michigan students with a <font color="#FF7469">@umich.edu</font> email</p>
           </div>
         </div>
         <div id="inputContainer">
@@ -140,7 +140,12 @@
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-body">
-              <div class="center-block">
+              <p class="text-xs-left muli">
+                We are still in Beta stage. Every week, we will give away a free activity worth $10 to the first 10 people on the list.<br>
+                The more people sign up with your code, the faster you move up the list.<br>
+                Add your email address to get in the game!
+              </p>
+              <div class="maitre-section">
                 <script type="text/javascript">
                   window.Maitre = { uuid: "MF91223e02de" };
                 </script>
@@ -157,13 +162,13 @@
     <div id="eventsContainer" class="container-fluid">
       <div class="row">
         <div class="text-xs-center">
-          <h3 class="ubuntu">What Are We Working On?</h3>
+          <h3 class="ubuntu">What can you do on Impronto?</h3>
         </div>
       </div> <!-- row -->
       <div class="row">
         <div class="text-xs-center">
             <h5 class="muli">
-              Try New <font color="#FFCF09">Activities</font> | Explore New <font color="#FFCF09">Experiences</font> | Build New <font color="#FFCF09">Stories</font>
+              Try new <font color="#FFCF09">activities</font> | Explore new <font color="#FFCF09">experiences</font> | Build new <font color="#FFCF09">stories</font>
             </h5>
         </div>
       </div> <!-- row -->
@@ -215,57 +220,67 @@
           </div> <!-- col-lg-4 col-md-4 col-sm-4 -->
           <div class="col-lg-4 col-md-4 col-sm-4">
             <figure class="figure text-xs-center" id="figureButton">
-              <h3 class="ubuntu">Have An Idea For <br />Your Own Event?</h3>
+              <h3 class="ubuntu">Have an idea for <br />your own activity?</h3>
               <br />
               <a href="#" id="squareButton"><i class="fa fa-plus-square fa-5x"></i></a>
               <br />
               <br />
-              <h3 class="ubuntu">Add Here!</h3>
+              <h3 class="ubuntu">Add here!</h3>
             </figure>
           </div> <!-- col-lg-4 col-md-4 col-sm-4 -->
         </div>  <!-- row -->
       </div> <!-- imagesSection -->
     </div> <!-- eventsContainer -->
 
+    <!--  notes, screen, communication, three-->
+
     <div id="howItWorks" class="container-fluid">
       <div class="row">
-        <h2 class="text-xs-center ubuntu hiw-title">HOW IMPRONTO WORKS</h2>
+        <h3 class="text-xs-center ubuntu hiw-title" id="hiw-title">How will <font color="#FF7469">Im</font><font color="#FFCF09">pronto</font> work</h3>
       </div> <!-- row -->
       <div class="row">
         <div class="col-md-3">
           <div class="text-xs-center hiw-image">
-            <i class="fa fa-user-plus fa-5x"></i>
+            <img src="assets/images/iconpic2.png">
           </div>
           <div class="text-xs-center hiw-des">
             <h5 class="hiw-des-title muli"><span>1.</span> Join Impronto</h5>
-            <p><small>Become a part of an friendly community.</small></p>
+
+              <p class="muli text-xs-left">Sign up with your umich email address.</p>
+
           </div>
         </div> <!-- col-md-3 -->
         <div class="col-md-3">
           <div class="text-xs-center hiw-image">
-            <i class="fa fa-calendar-plus-o fa-5x"></i>
+            <img src="assets/images/iconpic4.png">
           </div>
           <div class="text-xs-center hiw-des muli">
-            <h5 class="hiw-des-title muli"><span>2.</span> Create or Attend A Event</h5>
-            <p class="muli"><small>Make your mark on the community by organizing or attending an event.</small></p>
+            <h5 class="hiw-des-title muli"><span>2.</span> Join an activity</h5>
+
+              <p class="muli text-xs-left">Choose something that interests you from a list of paid or free.</p>
+
           </div>
         </div> <!-- col-md-3 -->
         <div class="col-md-3">
           <div class="text-xs-center hiw-image">
-            <i class="fa fa-comments-o fa-5x"></i>
+            <img src="assets/images/iconpic1.png">
           </div>
           <div class="text-xs-center hiw-des">
-            <h5 class="hiw-des-title muli"><span>3.</span> Make New Friends</h5>
-            <p class="muli"><small>Meet people just like you and have an amazing time.</small></p>
+            <h5 class="hiw-des-title muli"><span>3.</span> Get in touch</h5>
+
+              <p class="muli text-xs-left">Chat with other users who signed up for the same activity before meeting them.</p>
+
           </div>
         </div> <!-- col-md-3 -->
         <div class="col-md-3">
           <div class="text-xs-center hiw-image">
-            <i class="fa fa-retweet fa-5x"></i>
+            <img src="assets/images/iconpic3.png">
           </div>
           <div class="text-xs-center hiw-des">
-            <h5 class="hiw-des-title muli"><span>4.</span> Repeat!</h5>
-            <p class="muli"><small>Keep engaging with the community and have an amazing time.</small></p>
+            <h5 class="hiw-des-title muli"><span>4.</span> Attend your activity!</h5>
+
+              <p class="muli text-xs-left">Have fun at the activity. Keep in touch if you'd like. Build friendships and connections.</p>
+
           </div>
         </div> <!-- col-md-3 -->
       </div> <!-- row -->
@@ -274,30 +289,37 @@
     <div id="infoContainer" class="container-fluid">
       <div class="row">
         <div class="col-sm-6 col-sm-offset-3">
-          <h2 class="text-xs-center ubuntu">Want To List Your Gig?</h2>
-          <h5 class="text-xs-left muli">
-            What Is Your Gig About?
+          <h3 class="text-xs-center ubuntu ict">Spilling the beans on Impronto...</h3>
+          <h5 class="text-xs-left muli yellow icq">
+            What is this platform about?
           </h5>
-          <p class="text-xs-left muli info-answer">
-            Our platform will eventually allow users to create their own activities (both free & paid ones) for other people to join. This will be a way for you to meet like-minded people doing something you enjoy. It will carry a small fee, but by joining early, you will be able to do this free of charge.
+          <p class="text-xs-left muli info-answer white ica">
+            Our platform will allow users to create their own activities (both free & paid ones) for other people to join. When you create a paid activity, every user signing up for it would need to pay a fee decided by you. <br>This will be a way for you to meet like-minded people doing something you enjoy. For the most outgoing people, you get to build social communities around your favorite hobbies and hangout spots.
+
           </p>
-          <h5 class="text-xs-left muli">
-            What Kind Of Activities Are We Allowed To Host?
+          <h5 class="text-xs-left muli yellow icq">
+            Why do I want to join Impronto?
           </h5>
-          <p class="text-xs-left muli info-answer">
-            These activities can be anything fun, from playing frisbee at the diag, to watching a movie, or playing a game. We want give our users great experiences. Use your imagination, creativity and individuality. Obviously, there are limitations, because this is a meetup and friendship platform.
+          <p class="text-xs-left muli info-answer white ica">
+            Ever wanted to do something and could never find any company? Your friends are busy or not interested in that Japanese movie you want to watch or ethiopian food you want to try. With Impronto you can join such random plans or even create your own. Impronto lets you do these activities, helping take away the initial awkwardness of meeting new people while also doing something fun. You can also stay in touch with these people and plan another event.
           </p>
-          <h5 class="text-xs-left muli">
-            How Do I List My Activity?
+          <h5 class="text-xs-left muli yellow icq">
+            What kind of activites are we allowed to host?
           </h5>
-          <p class="text-xs-left muli info-answer">
+          <p class="text-xs-left muli info-answer white ica">
+            These activities can be anything fun, from playing frisbee at the diag, to watching a movie, or attending a music concert. We want give our users great experiences. Use your imagination, creativity and individuality to create the activity of a lifetime.
+          </p>
+          <h5 class="text-xs-left muli yellow icq">
+            How do I list my activity?
+          </h5>
+          <p class="text-xs-left muli info-answer white ica">
             We will make it easy for you. Just click<font color="#FFCF09"><a style="text-decoration: none;" id="eventHereButton"> here</a></font>!
           </p>
-          <h5 class="text-xs-left muli">
-            What Happens Next?
+          <h5 class="text-xs-left muli yellow icq">
+            What happens next?
           </h5>
-          <p class="text-xs-left muli info-answer">
-            We will review your activity, and be in touch with you within the next 24 hours.
+          <p class="text-xs-left muli info-answer white ica">
+            We will review your activity and be in touch with you within the next 24 hours.
           </p>
         </div> <!-- col-sm-6 col-sm-offset-3 -->
       </div> <!-- row -->
@@ -324,6 +346,12 @@
         </div>
       </div> <!-- modal -->
     </div> <!-- gigInfoContainer -->
+
+    <div id="footer" class="container-fluid">
+    	<div class="row">
+    		<p class="text-xs-right muli"> Icons designed by <a href="http://www.freepik.com/">Freepik</a></p>
+    	</div>
+    </div>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
